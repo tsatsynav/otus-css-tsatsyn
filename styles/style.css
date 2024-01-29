@@ -1,5 +1,127 @@
 body {
-  font-family: Bitter, sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-title {
+  font-family: "Playfair Display", serif;
+  font-size: 86px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.menu {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.hero__title {
+  font-weight: 500;
+}
+
+.hero__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.biography__card-title {
+  font-weight: 500;
+}
+
+.biography__card-list {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0d0d0d;
+}
+
+.biography__blockquote {
+  font-family: Bitter, serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #0d0d0d;
+}
+
+.designers__list {
+  font-family: Roboto;
   font-size: 16px;
+  font-weight: 700;
+}
+
+.designers__title {
+  text-transform: uppercase;
+}
+
+.designers__sublist-accent .designers__subitem-accent {
+  font-weight: 400;
+}
+
+.testimonials__list {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.testimonials__item-text {
+  font-weight: 400;
+}
+
+.testimonials__blockquote {
+  font-family: Bitter, serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.strong-points__title {
+  font-weight: 500;
+}
+
+.strong-points__sublist {
+  font-family: Bitter, serif;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.address {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 162.5%;
+}
+
+.address__phone {
+  text-decoration-line: underline;
+}
+
+.address__email {
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.product {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.product-style {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.rights {
+  font-size: 16px;
+  font-weight: 400;
 }
