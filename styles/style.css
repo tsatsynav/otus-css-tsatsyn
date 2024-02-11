@@ -4,7 +4,8 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 150px;
+
+  margin: 0;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -19,9 +20,14 @@
 
 .page-title {
   font-family: "Playfair Display", serif;
-  font-size: 86px;
+  font-size: clamp(4.375rem, 4.0539rem + 1.4679vw, 5.375rem);
   font-weight: 600;
   line-height: 120%;
+}
+
+.section-title {
+  font-size: inherit;
+  font-weight: 700;
 }
 
 /* <<<------ 2.MAIN CONTENT STYLES ------>>> */
@@ -41,7 +47,44 @@
 
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 55px;
+}
+
+/* <<<------ 3.MAIN STYLES ------>>> */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 150px;
+}
+
+/* <<<------ 3.1.hero styles ------>>> */
+
+.hero {
+  display: flex;
+  min-block-size: 630px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/hero-background.jpg);
+  background-image: image-set(
+    url("../images/hero-background.avif") type("image/avif"),
+    url("../images/hero-background.jpg") type("image/jpg")
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__present {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 110px 122px;
+  gap: 14px;
+  background-color: #fff;
 }
 
 .hero__title {
@@ -53,10 +96,7 @@
   font-weight: 500;
 }
 
-.section-title {
-  font-size: 24px;
-  font-weight: 700;
-}
+/* <<<------ 3.1.biography styles ------>>> */
 
 .biography__card-title {
   font-weight: 500;
