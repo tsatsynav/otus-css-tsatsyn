@@ -109,7 +109,6 @@
 
 .biography {
   display: flex;
-  position: relative;
 }
 
 .biography__image {
@@ -118,8 +117,6 @@
 }
 
 /* .biography__title {
-  position: absolute;
-  rotate: -90deg;
 } */
 
 .biography__card-title {
