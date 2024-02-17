@@ -1,24 +1,99 @@
-body {
+/* <<<------ 1.COMMON STYLES ------>>> */
+/* <<<------ 1.1.COMMON BLOCKS ------>>> */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-inline-size: 350px;
+  margin: 0;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 24px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.wrapper-inner-xs {
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
 }
+
+.wrapper-inner-xl {
+  padding-inline-start: 137px;
+  padding-inline-end: 137px;
+}
+
+/* <<<------ 1.2.COMMON TITLES ------>>> */
 
 .page-title {
   font-family: "Playfair Display", serif;
-  font-size: 86px;
-  font-weight: 600;
+  font-size: clamp(4.375rem, 4.0539rem + 1.4679vw, 5.375rem);
   line-height: 120%;
 }
 
+.section-title {
+  font-size: clamp(1.125rem, 1.0046rem + 0.5505vw, 1.5rem);
+  font-weight: 700;
+}
+
+/* <<<------ 2.MAIN CONTENT STYLES ------>>> */
+/* <<<------ 2.1.HEADER ------>>> */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
+}
+
+.header__title {
+  font-weight: 600;
+}
+
 .menu {
-  font-size: 24px;
   font-weight: 500;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+}
+
+/* <<<------ 2.2.MAIN ------>>> */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 150px;
+}
+
+/* <<<------ 2.2.1.hero styles ------>>> */
+
+.hero {
+  display: flex;
+  min-block-size: 630px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9cdc4;
+  background-image: url(../images/hero-background.jpg);
+  background-image: image-set(
+    url("../images/hero-background.avif") type("image/avif"),
+    url("../images/hero-background.jpg") type("image/jpg")
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5% 8.5%;
+  gap: 14px;
+  background-color: #fff;
 }
 
 .hero__title {
@@ -26,14 +101,23 @@ a {
 }
 
 .hero__subtitle {
-  font-size: 20px;
+  font-size: clamp(1.125rem, 1.0682rem + 0.202vw, 1.25rem);
   font-weight: 500;
 }
 
-.section-title {
-  font-size: 24px;
-  font-weight: 700;
+/* <<<------ 2.2.2.biography styles ------>>> */
+
+.biography {
+  display: flex;
 }
+
+.biography__image {
+  max-inline-size: 571px;
+  max-block-size: 840px;
+}
+
+/* .biography__title {
+} */
 
 .biography__card-title {
   font-weight: 500;
@@ -52,6 +136,8 @@ a {
   color: #0d0d0d;
 }
 
+/* <<<------ 2.2.3.designers styles ------>>> */
+
 .designers__list {
   font-family: Roboto;
   font-size: 16px;
@@ -65,6 +151,8 @@ a {
 .designers__card-sublist .designers__card-subitem {
   font-weight: 400;
 }
+
+/* <<<------ 2.2.4.testimonials styles ------>>> */
 
 .testimonials__list {
   font-size: 16px;
@@ -81,6 +169,8 @@ a {
   font-weight: 400;
 }
 
+/* <<<------ 2.2.5.strong-points styles ------>>> */
+
 .strong-points__title {
   font-weight: 500;
 }
@@ -90,6 +180,8 @@ a {
   font-size: 34px;
   font-weight: 400;
 }
+
+/* <<<------ 2.3.FOOTER ------>>> */
 
 .footer {
   background-color: #000;
