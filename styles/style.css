@@ -109,6 +109,8 @@
 
 .biography {
   display: flex;
+  position: relative;
+  gap: 139px;
 }
 
 .biography__image {
@@ -116,17 +118,41 @@
   max-block-size: 840px;
 }
 
-/* .biography__title {
-} */
+.biography__card {
+  display: flex;
+  flex-direction: column;
+  padding-block-start: 180px;
+  gap: 37px;
+}
+
+span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.biography__title {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 696px;
+  top: 45px;
+}
 
 .biography__card-title {
   font-weight: 500;
+  line-height: 130%;
 }
 
 .biography__card-list {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
+  letter-spacing: 0.3px;
   font-weight: 500;
   color: #0d0d0d;
+}
+
+.biography__card-sublist {
+  display: flex;
 }
 
 .biography__blockquote {
@@ -144,7 +170,7 @@
   font-weight: 700;
 }
 
-.designers__title {
+.designers__card-title {
   text-transform: uppercase;
 }
 
