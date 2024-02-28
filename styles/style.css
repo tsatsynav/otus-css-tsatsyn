@@ -121,13 +121,8 @@
 .biography__card {
   display: flex;
   flex-direction: column;
-  padding-block-start: 180px;
-  gap: 37px;
-}
-
-span {
-  display: inline-block;
-  margin-bottom: 5px;
+  padding-block-start: 145px;
+  gap: 36px;
 }
 
 .biography__title {
@@ -138,28 +133,36 @@ span {
 }
 
 .biography__card-title {
+  padding-block-start: 26px;
+  padding-inline-end: 30px;
   font-weight: 500;
-  line-height: 130%;
+  line-height: 140%;
 }
 
-.biography__card-list {
-  display: flex;
-  flex-direction: column;
+.biography__card-subtitle {
   font-size: 18px;
-  letter-spacing: 0.3px;
-  font-weight: 500;
-  color: #0d0d0d;
-}
-
-.biography__card-sublist {
-  display: flex;
 }
 
 .biography__blockquote {
+  position: relative;
+  padding-block-start: 23px;
+  padding-inline-end: 26px;
   font-family: Bitter, serif;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 400;
   color: #0d0d0d;
+  letter-spacing: 0.5px;
+  line-height: 112%;
+}
+
+.biography__blockquote::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 6px;
+  left: 2px;
+  top: -1px;
+  background-color: #0d0d0d;
 }
 
 /* <<<------ 2.2.3.designers styles ------>>> */
