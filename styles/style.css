@@ -11,14 +11,9 @@
   font-size: 24px;
 }
 
-.wrapper-inner-xs {
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
-}
-
-.wrapper-inner-xl {
-  padding-inline-start: 137px;
-  padding-inline-end: 137px;
+.wrapper-inner {
+  max-inline-size: 1165px;
+  margin: 0 auto;
 }
 
 /* <<<------ 1.2.COMMON TITLES ------>>> */
@@ -41,8 +36,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding: 16px 20px;
 }
 
 .header__title {
@@ -109,31 +103,60 @@
 
 .biography {
   display: flex;
+  position: relative;
+  gap: 139px;
 }
 
 .biography__image {
-  max-inline-size: 571px;
-  max-block-size: 840px;
+  max-inline-size: 49%;
+  object-fit: contain;
 }
 
-/* .biography__title {
-} */
+.biography__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+}
+
+.biography__title {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 560px;
+  top: 44px;
+}
 
 .biography__card-title {
+  padding-block-start: 5px;
+  padding-inline-end: 30px;
   font-weight: 500;
+  line-height: 140%;
 }
 
-.biography__card-list {
+.biography__card-subtitle {
   font-size: 18px;
-  font-weight: 500;
-  color: #0d0d0d;
 }
 
 .biography__blockquote {
+  position: relative;
+  padding-block-start: 23px;
+  padding-inline-end: 26px;
   font-family: Bitter, serif;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 400;
   color: #0d0d0d;
+  letter-spacing: 0.5px;
+  line-height: 112%;
+}
+
+.biography__blockquote::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 6px;
+  left: 2px;
+  top: -1px;
+  background-color: #0d0d0d;
 }
 
 /* <<<------ 2.2.3.designers styles ------>>> */
@@ -144,7 +167,7 @@
   font-weight: 700;
 }
 
-.designers__title {
+.designers__card-title {
   text-transform: uppercase;
 }
 
