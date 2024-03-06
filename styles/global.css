@@ -16,6 +16,9 @@ p,
 ul,
 ol,
 li,
+dl,
+dt,
+dd,
 blockquote {
   margin: 0;
   padding: 0;

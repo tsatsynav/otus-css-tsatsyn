@@ -161,18 +161,53 @@
 
 /* <<<------ 2.2.3.designers styles ------>>> */
 
-.designers__list {
+.designers {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 20px;
+  gap: 30px;
   font-family: Roboto;
   font-size: 16px;
-  font-weight: 700;
+}
+
+.designers__title {
+  padding-inline-start: 119px;
+}
+
+.designers__list {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  overflow: scroll;
+}
+
+.designers__card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.designers__card:not(:first-of-type) {
+  max-inline-size: 337px;
+  min-block-size: 520px;
 }
 
 .designers__card-title {
   text-transform: uppercase;
+  font-weight: 700;
 }
 
-.designers__card-sublist .designers__card-subitem {
-  font-weight: 400;
+.designers__card-item {
+  display: flex;
+  gap: 5px;
+}
+
+.designers__card-term {
+  font-weight: 700;
+}
+
+.designers__card-definition:not(:last-of-type)::after {
+  content: "/";
 }
 
 /* <<<------ 2.2.4.testimonials styles ------>>> */
