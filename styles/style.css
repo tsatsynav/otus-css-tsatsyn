@@ -177,19 +177,62 @@
 
 /* <<<------ 2.2.4.testimonials styles ------>>> */
 
+.testimonials {
+  display: grid;
+  grid-template-columns: 569px 450px;
+  position: relative;
+  gap: 143px;
+}
+
+.testimonials__left-side {
+  display: flex;
+  position: relative;
+  padding-inline-start: 118px;
+}
+
 .testimonials__list {
+  display: flex;
+  gap: 70px;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -240px;
+  top: 370px;
   font-size: 16px;
   font-weight: 700;
+}
+
+.testimonials__item {
 }
 
 .testimonials__item-text {
   font-weight: 400;
 }
 
+.testimonials__img {
+  max-inline-size: 100%;
+  object-fit: contain;
+}
+
+.testimonials__title {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 560px;
+  top: 44px;
+}
+
+.testimonials__right-side {
+  inline-size: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 7% 24%;
+  gap: 42px;
+}
+
 .testimonials__blockquote {
   font-family: Bitter, serif;
   font-size: 32px;
   font-weight: 400;
+  text-align: center;
 }
 
 /* <<<------ 2.2.5.strong-points styles ------>>> */
