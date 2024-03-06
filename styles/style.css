@@ -191,17 +191,27 @@
 }
 
 .testimonials__list {
-  display: flex;
-  gap: 70px;
-  position: absolute;
-  transform: rotate(-90deg);
-  left: -240px;
-  top: 370px;
+  position: relative;
   font-size: 16px;
   font-weight: 700;
 }
 
 .testimonials__item {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -136px;
+}
+
+.testimonials__item-start {
+  bottom: 90px;
+}
+
+.testimonials__item-middle {
+  bottom: 352px;
+}
+
+.testimonials__item-end {
+  top: 113px;
 }
 
 .testimonials__item-text {
@@ -216,23 +226,29 @@
 .testimonials__title {
   position: absolute;
   transform: rotate(-90deg);
-  left: 560px;
-  top: 44px;
+  left: 535px;
+  top: 54px;
 }
 
 .testimonials__right-side {
   inline-size: 450px;
   display: flex;
   flex-direction: column;
-  padding: 7% 24%;
-  gap: 42px;
+  padding: 9% 25.5%;
+  gap: 38px;
 }
 
 .testimonials__blockquote {
   font-family: Bitter, serif;
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 400;
   text-align: center;
+  line-height: 1.1;
+}
+
+.testimonials__image-right {
+  width: 221px;
+  height: 334px;
 }
 
 /* <<<------ 2.2.5.strong-points styles ------>>> */
