@@ -127,7 +127,7 @@
 }
 
 .biography__card-title {
-  padding-block-start: 5px;
+  padding-block-start: 4px;
   padding-inline-end: 30px;
   font-weight: 500;
   line-height: 140%;
@@ -135,6 +135,17 @@
 
 .biography__card-subtitle {
   font-size: 18px;
+}
+
+.biography__list {
+  display: flex;
+  margin-block-end: 36px;
+  gap: 5px;
+  font-size: 18px;
+}
+
+.biography__item:not(:last-of-type)::after {
+  content: " /";
 }
 
 .biography__blockquote {
@@ -161,35 +172,139 @@
 
 /* <<<------ 2.2.3.designers styles ------>>> */
 
-.designers__list {
+.designers {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 20px;
+  gap: 33px;
   font-family: Roboto;
   font-size: 16px;
-  font-weight: 700;
+}
+
+.designers__title {
+  padding-inline-start: 119px;
+}
+
+.designers__list {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  overflow: scroll;
+}
+
+.designers__card {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.designers__card-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.designers__active {
+  padding-inline-start: 240px;
 }
 
 .designers__card-title {
   text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -1.3px;
 }
 
-.designers__card-sublist .designers__card-subitem {
-  font-weight: 400;
+.designers__card-item {
+  display: flex;
+  gap: 5px;
+}
+
+.designers__card-term {
+  font-weight: 700;
+  /* letter-spacing: 1px; */
+}
+
+.designers__card-definition {
+  letter-spacing: 1px;
+}
+
+.designers__card-definition:not(:last-of-type)::after {
+  content: " /";
 }
 
 /* <<<------ 2.2.4.testimonials styles ------>>> */
 
+.testimonials {
+  display: grid;
+  grid-template-columns: 569px 450px;
+  position: relative;
+  gap: 143px;
+}
+
+.testimonials__left-side {
+  display: flex;
+  position: relative;
+  padding-inline-start: 118px;
+}
+
 .testimonials__list {
+  position: relative;
   font-size: 16px;
   font-weight: 700;
+}
+
+.testimonials__item {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -136px;
+}
+
+.testimonials__item-start {
+  bottom: 90px;
+}
+
+.testimonials__item-middle {
+  bottom: 352px;
+}
+
+.testimonials__item-end {
+  top: 113px;
 }
 
 .testimonials__item-text {
   font-weight: 400;
 }
 
+.testimonials__img {
+  max-inline-size: 100%;
+  object-fit: contain;
+}
+
+.testimonials__title {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 535px;
+  top: 54px;
+}
+
+.testimonials__right-side {
+  inline-size: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 9% 25.5%;
+  gap: 38px;
+}
+
 .testimonials__blockquote {
   font-family: Bitter, serif;
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 400;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.testimonials__image-right {
+  width: 221px;
+  height: 334px;
 }
 
 /* <<<------ 2.2.5.strong-points styles ------>>> */
