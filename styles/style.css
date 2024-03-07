@@ -127,7 +127,7 @@
 }
 
 .biography__card-title {
-  padding-block-start: 5px;
+  padding-block-start: 4px;
   padding-inline-end: 30px;
   font-weight: 500;
   line-height: 140%;
@@ -135,6 +135,17 @@
 
 .biography__card-subtitle {
   font-size: 18px;
+}
+
+.biography__list {
+  display: flex;
+  margin-block-end: 36px;
+  gap: 5px;
+  font-size: 18px;
+}
+
+.biography__item:not(:last-of-type)::after {
+  content: " /";
 }
 
 .biography__blockquote {
@@ -165,7 +176,7 @@
   display: flex;
   flex-direction: column;
   padding-inline-start: 20px;
-  gap: 30px;
+  gap: 33px;
   font-family: Roboto;
   font-size: 16px;
 }
@@ -184,17 +195,22 @@
 .designers__card {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 26px;
 }
 
-.designers__card:not(:first-of-type) {
-  max-inline-size: 337px;
-  min-block-size: 520px;
+.designers__card-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.designers__active {
+  padding-inline-start: 240px;
 }
 
 .designers__card-title {
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: -1.3px;
 }
 
 .designers__card-item {
@@ -204,10 +220,15 @@
 
 .designers__card-term {
   font-weight: 700;
+  /* letter-spacing: 1px; */
+}
+
+.designers__card-definition {
+  letter-spacing: 1px;
 }
 
 .designers__card-definition:not(:last-of-type)::after {
-  content: "/";
+  content: " /";
 }
 
 /* <<<------ 2.2.4.testimonials styles ------>>> */
