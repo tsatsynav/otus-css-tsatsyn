@@ -16,6 +16,17 @@
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 /* <<<------ 1.2.COMMON TITLES ------>>> */
 
 .page-title {
@@ -179,15 +190,14 @@
 
 .testimonials {
   display: grid;
-  grid-template-columns: 569px 450px;
-  position: relative;
-  gap: 143px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 .testimonials__left-side {
   display: flex;
   position: relative;
-  padding-inline-start: 118px;
+  justify-content: end;
 }
 
 .testimonials__list {
@@ -199,7 +209,7 @@
 .testimonials__item {
   position: absolute;
   transform: rotate(-90deg);
-  left: -136px;
+  left: -139px;
 }
 
 .testimonials__item-start {
@@ -223,22 +233,25 @@
   object-fit: contain;
 }
 
-.testimonials__title {
-  position: absolute;
-  transform: rotate(-90deg);
-  left: 535px;
-  top: 54px;
+.testimonials__right-side {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-inline-start: 21%;
+  gap: 38px;
+  align-items: center;
+  justify-content: center;
 }
 
-.testimonials__right-side {
-  inline-size: 450px;
-  display: flex;
-  flex-direction: column;
-  padding: 9% 25.5%;
-  gap: 38px;
+.testimonials__title-inside {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -56px;
+  top: 56px;
 }
 
 .testimonials__blockquote {
+  padding: 0 25%;
   font-family: Bitter, serif;
   font-size: 35px;
   font-weight: 400;
