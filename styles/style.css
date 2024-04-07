@@ -210,7 +210,6 @@
 .designers__card-title {
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: -1.3px;
 }
 
 .designers__card-item {
@@ -221,10 +220,6 @@
 .designers__card-term {
   font-weight: 700;
   /* letter-spacing: 1px; */
-}
-
-.designers__card-definition {
-  letter-spacing: 1px;
 }
 
 .designers__card-definition:not(:last-of-type)::after {
