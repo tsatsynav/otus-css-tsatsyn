@@ -16,6 +16,17 @@
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 /* <<<------ 1.2.COMMON TITLES ------>>> */
 
 .page-title {
@@ -177,19 +188,80 @@
 
 /* <<<------ 2.2.4.testimonials styles ------>>> */
 
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.testimonials__left-side {
+  display: flex;
+  position: relative;
+  justify-content: end;
+}
+
 .testimonials__list {
+  position: relative;
   font-size: 16px;
   font-weight: 700;
+}
+
+.testimonials__item {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -139px;
+}
+
+.testimonials__item-start {
+  bottom: 90px;
+}
+
+.testimonials__item-middle {
+  bottom: 352px;
+}
+
+.testimonials__item-end {
+  top: 113px;
 }
 
 .testimonials__item-text {
   font-weight: 400;
 }
 
+.testimonials__img {
+  max-inline-size: 100%;
+  object-fit: contain;
+}
+
+.testimonials__right-side {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-inline-start: 21%;
+  gap: 38px;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__title-inside {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -56px;
+  top: 56px;
+}
+
 .testimonials__blockquote {
+  padding: 0 25%;
   font-family: Bitter, serif;
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 400;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.testimonials__image-right {
+  width: 221px;
+  height: 334px;
 }
 
 /* <<<------ 2.2.5.strong-points styles ------>>> */
