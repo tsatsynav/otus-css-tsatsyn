@@ -317,8 +317,15 @@
 
 /* <<<------ 2.2.5.strong-points styles ------>>> */
 
-.strong-points__title {
-  font-weight: 500;
+.strong-points {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.strong-points__list {
+  display: flex;
+  gap: 20px;
 }
 
 .strong-points__sublist {
