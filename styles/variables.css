@@ -4,7 +4,7 @@
     --section-title-font-size: clamp(1.125rem, 1.0046rem + 0.5505vw, 1.5rem);
     --page-font-size: 24px;
     --hero-subtitle-font-size: clamp(1.125rem, 1.0682rem + 0.202vw, 1.25rem);
-    --page-blockquote-font-size: clamp(1.625rem, 1.5114rem + 0.404vw, 1.875rem);
+    --page-blockquote-font-size: clamp(1.625rem, 1.625rem + 0vw, 1.625rem);
     --designers-font-size: 16px;
     --strong-points-sublist-font-size: clamp(1.5rem, 1.2159rem + 1.0101vw, 2.125rem);
     --footer-font-size: 16px;
@@ -13,6 +13,7 @@
 
 
     /* COLORS & IMAGES */
+    --link-active-color: #000;
     --hero-background-color: #d9cdc4;
     --hero-background-image: url(../images/hero-background.jpg);
     --hero-promo-background-color: #fff;
