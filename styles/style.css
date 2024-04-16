@@ -6,9 +6,9 @@
   flex-direction: column;
   min-inline-size: 350px;
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: var(--page-main-font-family);
   font-style: normal;
-  font-size: 24px;
+  font-size: var(--page-font-size);
 }
 
 .wrapper-inner {
@@ -30,13 +30,13 @@
 /* <<<------ 1.2.COMMON TITLES ------>>> */
 
 .page-title {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(4.375rem, 4.0539rem + 1.4679vw, 5.375rem);
+  font-family: var(--page-title-font-family);
+  font-size: var(--page-title-font-size);
   line-height: 120%;
 }
 
 .section-title {
-  font-size: clamp(1.125rem, 1.0046rem + 0.5505vw, 1.5rem);
+  font-size: var(--section-title-font-size);
   font-weight: 700;
 }
 
@@ -61,7 +61,7 @@
 .menu__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 55px;
+  gap: 56px;
 }
 
 /* <<<------ 2.2.MAIN ------>>> */
@@ -81,12 +81,8 @@
   min-block-size: 630px;
   align-items: center;
   justify-content: center;
-  background-color: #d9cdc4;
-  background-image: url(../images/hero-background.jpg);
-  background-image: image-set(
-    url("../images/hero-background.avif") type("image/avif"),
-    url("../images/hero-background.jpg") type("image/jpg")
-  );
+  background-color: var(--hero-background-color);
+  background-image: var(--hero-background-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -99,7 +95,7 @@
   justify-content: center;
   padding: 7.5% 8.5%;
   gap: 14px;
-  background-color: #fff;
+  background-color: var(--hero-promo-background-color);
 }
 
 .hero__title {
@@ -107,7 +103,7 @@
 }
 
 .hero__subtitle {
-  font-size: clamp(1.125rem, 1.0682rem + 0.202vw, 1.25rem);
+  font-size: var(--hero-subtitle-font-size);
   font-weight: 500;
 }
 
@@ -164,11 +160,11 @@
   position: relative;
   padding-block-start: 23px;
   padding-inline-end: 26px;
-  font-family: Bitter, serif;
-  font-size: 28px;
+  font-family: var(--page-blockquote-font-family);
+  font-size: var(--page-blockquote-font-size);
   font-weight: 400;
-  color: #0d0d0d;
-  letter-spacing: 0.5px;
+  color: var(--page-blockquote-color);
+  /*letter-spacing: 0.5px;*/
   line-height: 112%;
 }
 
@@ -179,7 +175,7 @@
   height: 6px;
   left: 2px;
   top: -1px;
-  background-color: #0d0d0d;
+  background-color: var(--page-blockquote-color);
 }
 
 /* <<<------ 2.2.3.designers styles ------>>> */
@@ -189,8 +185,7 @@
   flex-direction: column;
   padding-inline-start: 20px;
   gap: 28px;
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
+
 }
 
 .designers__title {
@@ -201,6 +196,7 @@
   display: flex;
   gap: 20px;
   align-items: baseline;
+  font-size: var(--designers-font-size);
   overflow: scroll;
 }
 
@@ -231,7 +227,6 @@
 
 .designers__card-term {
   font-weight: 700;
-  /* letter-spacing: 1px; */
 }
 
 .designers__card-definition:not(:last-of-type)::after {
@@ -306,8 +301,8 @@
 
 .testimonials__blockquote {
   padding: 0 25%;
-  font-family: Bitter, serif;
-  font-size: clamp(1.875rem, 1.8182rem + 0.202vw, 2rem);
+  font-family: var(--page-blockquote-font-family);
+  font-size: var(--page-blockquote-font-size);
   font-weight: 400;
   text-align: center;
   line-height: 120%;
@@ -365,20 +360,20 @@
 
 .strong-points__sublist {
   padding-inline-end: 17px;
-  font-family: Bitter, serif;
-  font-size: clamp(1.5rem, 1.2159rem + 1.0101vw, 2.125rem);
+  font-family: var(--page-blockquote-font-family);
+  font-size: var(--strong-points-sublist-font-size);
   line-height: 124%;
 }
 
 /* <<<------ 2.3.FOOTER ------>>> */
 
 .footer {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--footer-background-color);
+  color: var(--footer-color);
+  font-size: var(--footer-font-size);
 }
 
 .address {
-  font-size: 16px;
   font-weight: 400;
   line-height: 162.5%;
 }
@@ -393,16 +388,15 @@
 }
 
 .product {
-  font-size: 18px;
+  font-size: var(--footer-product-font-size);
   font-weight: 500;
 }
 
-.product-style {
-  font-size: 24px;
+.product-accent {
+  font-size: var(--footer-product-accent-font-size);
   font-weight: 900;
 }
 
 .rights {
-  font-size: 16px;
   font-weight: 400;
 }
