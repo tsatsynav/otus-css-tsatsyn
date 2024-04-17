@@ -707,6 +707,7 @@
   border-bottom: 1px solid var(--navigarion-border-color);
   font-family: var(--page-accent-font-family);
   font-size: 40px;
+  background-color: #ffffff;
   z-index: 99;
 }
 
