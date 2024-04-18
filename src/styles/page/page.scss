@@ -3,8 +3,10 @@
 .page {
   @include display-flex-column;
   min-inline-size: 350px;
-  margin: 0;
-  font-family: var(--page-main-font-family);
+  margin: 0 auto;
+  background-color: var(--page-background-color);
+  color: var(--page-color);
+  font-family: var(--page-font-family);
   font-style: normal;
   font-size: var(--page-font-size);
 }

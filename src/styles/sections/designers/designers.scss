@@ -1,4 +1,4 @@
-/* <<<------ 2.2.3.designers styles ------>>> */
+/* <<<--- designers styles --->>> */
 @import '../../mixins/display-flex-column';
 
 .designers {
@@ -14,13 +14,14 @@
     display: flex;
     gap: 20px;
     align-items: baseline;
-    font-size: var(--designers-font-size);
-    overflow: scroll;
+    font-family: var(--designers-list-font-family);
+    font-size: var(--designers-list-font-size);
+    overflow-x: scroll;
   }
 
   &__card {
     @include display-flex-column;
-    gap: 24px;
+    gap: 18px;
   }
 
   &__card-img {

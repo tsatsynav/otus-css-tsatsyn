@@ -23,10 +23,11 @@
     position: absolute;
     transform: rotate(-90deg);
     right: -23%;
+    letter-spacing: -0.5px;
   }
 
   &__item-start {
-    bottom: 90px;
+    bottom: 92px;
   }
 
   &__item-middle {
@@ -50,9 +51,8 @@
     @include display-flex-column;
     position: relative;
     padding-inline-start: 21%;
-    gap: 38px;
     align-items: center;
-    justify-content: center;
+    gap: 22px;
   }
 
   &__title-inside {
@@ -63,17 +63,13 @@
   }
 
   &__blockquote {
-    padding: 0 25%;
-    font-family: var(--page-accent-font-family);
-    font-size: var(--page-blockquote-font-size-desktop);
+    padding: 42px 122px 0;
+    margin-block-end: 22px;
+    font-family: var(--page-font-family);
+    font-size: var(--page-testimonials-blockquote-font-size-desktop);
     font-weight: 400;
     text-align: center;
-    line-height: 130%;
+    line-height: 104%;
     letter-spacing: 1px;
-  }
-
-  &__image-right {
-    width: 221px;
-    height: 334px;
   }
 }

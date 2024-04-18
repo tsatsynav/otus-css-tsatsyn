@@ -14,7 +14,6 @@
   &__card {
     @include display-flex-column;
     justify-content: center;
-    gap: 36px;
   }
 
   &__title {
@@ -25,19 +24,27 @@
   }
 
   &__card-title {
-    font-size: var(--katya-title-font-size);
+    padding-inline-end: 50px;
+    margin-block-end: 36px;
+    font-size: var(--biography-card-title-font-size);
     font-weight: 500;
     line-height: 135%;
   }
 
+  &__card-description {
+    @include display-flex-column;
+  }
+
   &__card-subtitle {
     font-size: 18px;
+    letter-spacing: -0.7px;
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 2px;
+    margin-block-end: 57px;
     font-size: 18px;
   }
 
@@ -47,10 +54,8 @@
 
   &__blockquote {
     position: relative;
-    padding-block-start: 26px;
-    padding-inline-end: 26px;
-    font-family: var(--page-accent-font-family);
-    font-size: var(--page-blockquote-font-size-desktop);
+    padding-inline-end: 85px;
+    font-size: var(--page-biography-blockquote-font-size-desktop);
     font-weight: 400;
     color: var(--page-blockquote-color);
     line-height: 120%;
@@ -61,8 +66,8 @@
     position: absolute;
     width: 20px;
     height: 6px;
-    left: 2px;
-    top: -1px;
+    left: 0.2%;
+    top: -19%;
     background-color: var(--page-blockquote-color);
   }
 }

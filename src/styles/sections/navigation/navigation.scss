@@ -4,11 +4,11 @@
   position: sticky;
   inline-size: 100%;
   bottom: 0;
-  border-top: 1px solid var(--navigarion-border-color);
-  border-bottom: 1px solid var(--navigarion-border-color);
+  border-top: 1px solid var(--navigation-border-color);
+  border-bottom: 1px solid var(--navigation-border-color);
   font-family: var(--page-accent-font-family);
   font-size: 40px;
-  background-color: #fff;
+  background-color: var(--page-background-color);
   z-index: 99;
 
   &__list {

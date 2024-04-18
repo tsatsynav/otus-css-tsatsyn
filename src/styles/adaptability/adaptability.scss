@@ -18,20 +18,25 @@
   }
 
   .hero__promo {
+    min-inline-size: 100%;
     min-block-size: 344px;
+  }
+
+  .hero__title {
+    letter-spacing: -1px;
   }
 
   .biography {
     flex-direction: column;
-    margin-block-end: 55px;
-    gap: 11px;
+    margin-block-end: 77px;
+    gap: 0;
   }
 
   .biography__image {
-    order: 1;
     max-inline-size: 100%;
     object-fit: cover;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1.12/1;
+    order: 1;
   }
 
   .biography__card {
@@ -78,14 +83,9 @@
   }
 
   .biography__blockquote {
-    padding-block-start: 0;
-    padding-inline-end: 0;
+    padding-inline-end: 70px;
     font-size: var(--page-blockquote-font-size-mobile);
     font-weight: 300;
-  }
-
-  .biography__blockquote::before {
-    display: none;
   }
 
   .designers {
@@ -159,7 +159,6 @@
   .testimonials__right-side {
     padding-inline-start: 0;
     padding-block-start: 48px;
-    gap: 22px;
   }
 
   .testimonials__title-inside {
@@ -169,11 +168,12 @@
   }
 
   .testimonials__blockquote {
-    padding: 0;
+    padding: 0 37px;
     font-size: var(--page-blockquote-font-size-mobile);
     font-weight: 300;
     line-height: 120%;
     letter-spacing: 0;
+    margin-block-end: 0;
   }
 
   .testimonials__image-right {
@@ -233,17 +233,17 @@
     gap: 3px;
   }
 
-  .address {
+  .footer__address {
     order: 1;
     align-self: start;
   }
 
-  .product {
+  .footer__product {
     order: 0;
     align-self: end;
   }
 
-  .rights {
+  .footer__rights {
     order: 2;
     align-self: start;
   }
@@ -251,6 +251,12 @@
 
 @media (width >= 768px) {
   .navigation {
+    display: none;
+  }
+}
+
+@media (width < 992px) {
+  .biography__blockquote::before {
     display: none;
   }
 }

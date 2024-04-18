@@ -3,31 +3,40 @@
 @font-face {
   font-family: 'Bitter';
   src:
-    url('Bitter-Light.woff2') format('woff2'),
-    url('Bitter-Light.woff') format('woff'),
-    url('Bitter-Light.ttf') format('ttf');
+    local('Bitter-Light'),
+    local('Bitter Light'),
+    url('./fonts/Bitter-Light.woff2') format('woff2'),
+    url('./fonts/Bitter-Light.woff') format('woff'),
+    url('./fonts/Bitter-Light.ttf') format('ttf');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Bitter';
   src:
-    url('Bitter-Regular.woff2') format('woff2'),
-    url('Bitter-Regular.woff') format('woff'),
-    url('Bitter-Regular.ttf') format('ttf');
+    local('Bitter-Regular'),
+    local('Bitter Regular'),
+    url('./fonts/Bitter-Regular.woff2') format('woff2'),
+    url('./fonts/Bitter-Regular.woff') format('woff'),
+    url('./fonts/Bitter-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Bitter';
   src:
-    url('Bitter-Bold.woff2') format('woff2'),
-    url('Bitter-Bold.woff') format('woff'),
-    url('Bitter-Bold.ttf') format('ttf');
+    local('Bitter-Bold'),
+    local('Bitter Bold'),
+    url('./fonts/Bitter-Bold.woff2') format('woff2'),
+    url('./fonts/Bitter-Bold.woff') format('woff'),
+    url('./fonts/Bitter-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: bold;
+  font-display: swap;
 }
 
 /* <<<--- ROBOTO FONTS --->>> */
@@ -35,39 +44,53 @@
 @font-face {
   font-family: 'Roboto';
   src:
-    url('Roboto-Regular.woff2') format('woff2'),
-    url('Roboto-Regular.woff') format('woff'),
-    url('Roboto-Regular.ttf') format('ttf');
+    local('Roboto-Light'),
+    local('Roboto Light'),
+    url('./fonts/Roboto-Regular.woff2') format('woff2'),
+    url('./fonts/Roboto-Regular.woff') format('woff'),
+    url('./fonts/Roboto-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto';
   src:
-    url('Roboto-Medium.woff2') format('woff2'),
-    url('Roboto-Medium.woff') format('woff'),
-    url('Roboto-Medium.ttf') format('ttf');
+    local('Roboto-Medium'),
+    local('Roboto Medium'),
+    url('./fonts/Roboto-Medium.woff2') format('woff2'),
+    url('./fonts/Roboto-Medium.woff') format('woff'),
+    url('./fonts/Roboto-Medium.ttf') format('ttf');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto';
   src:
-    url('Roboto-Bold.woff2') format('woff2'),
-    url('Roboto-Bold.woff') format('woff'),
-    url('Roboto-Bold.ttf') format('ttf');
+    local('Roboto-Bold'),
+    local('Roboto Bold'),
+    url('./fonts/Roboto-Bold.woff2') format('woff2'),
+    url('./fonts/Roboto-Bold.woff') format('woff'),
+    url('./fonts/Roboto-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto';
   src:
-    url('Roboto-Black.woff2') format('woff2'),
-    url('Roboto-Black.woff') format('woff'),
-    url('Roboto-Black.ttf') format('ttf');
+    local('Roboto-Black'),
+    local('Roboto Black'),
+    url('./fonts/Roboto-Black.woff2') format('woff2'),
+    url('./fonts/Roboto-Black.woff') format('woff'),
+    url('./fonts/Roboto-Black.ttf') format('ttf');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
+
+/* <<<--- PLAYFAIR DISPLAY ATTACHED INTO INDEX.HTML FROM GOOGLE-FONTS  --->>> */

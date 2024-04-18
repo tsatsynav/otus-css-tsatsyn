@@ -1,6 +1,6 @@
-/* <<<------ 1.COMMON STYLES ------>>> */
+/* <<<--- COMMON STYLES --->>> */
 
-/* <<<------ 1.1.COMMON BLOCKS ------>>> */
+/* <<<--- COMMON BLOCKS --->>> */
 
 .wrapper-inner {
   max-inline-size: 1165px;
@@ -18,15 +18,16 @@
   clip: rect(0 0 0 0);
 }
 
-/* <<<------ 1.2.COMMON TITLES ------>>> */
+/* <<<--- COMMON TITLES --->>> */
 
 .page-title {
-  font-family: var(--page-title-font-family);
+  font-family: var(--accent-font-family);
   font-size: var(--page-title-font-size);
   line-height: 120%;
 }
 
 .section-title {
+  font-family: var(--section-title-font-family);
   font-size: var(--section-title-font-size);
   font-weight: 700;
 }

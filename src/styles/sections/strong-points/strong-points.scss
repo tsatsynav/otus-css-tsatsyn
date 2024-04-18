@@ -1,4 +1,4 @@
-/* <<<------ 2.2.5.strong-points styles ------>>> */
+/* <<<--- strong-points styles --->>> */
 @import '../../mixins/display-flex-column';
 
 .strong-points {
@@ -17,11 +17,15 @@
     overflow: scroll;
   }
 
+  &__item {
+    inline-size: 335px;
+  }
+
   &__item-info {
     @include display-flex-column;
+    inline-size: 451px;
     gap: 28px;
     align-items: center;
-    padding: 0 37px 18px;
   }
 
   &__subtitle {
@@ -31,7 +35,6 @@
 
   &__sublist {
     padding-inline-end: 17px;
-    font-family: var(--page-accent-font-family);
     font-size: var(--strong-points-sublist-font-size);
     line-height: 124%;
   }

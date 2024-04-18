@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--hero-background-color);
-  background-image: var(--hero-background-image);
+  background-image: var(--hero-background-image-desktop);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,6 +26,7 @@
   }
 
   &__subtitle {
+    font-family: var(--section-hero-subtitle-font-family);
     font-size: var(--hero-subtitle-font-size);
     font-weight: 500;
   }

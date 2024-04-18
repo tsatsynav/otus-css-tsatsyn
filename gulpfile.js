@@ -103,20 +103,21 @@ function svg() {
     .pipe(browserSync.reload({ stream: true }));
 }
 
-// function scripts() {
-//   return gulp
-//     .src('./src/scripts/**/*.js')
-//     .pipe(gulp.dest('dist/scripts'))
-//     .pipe(browserSync.reload({ stream: true }));
-// }
+function scripts() {
+  return gulp
+    .src('./src/scripts/**/*.js')
+    .pipe(gulp.dest('dist/scripts'))
+    .pipe(browserSync.reload({ stream: true }));
+}
 
 function clean() {
   return del('dist');
 }
 
-//!!!if don't use scripts in start of project
-//!!!after add 'scripts'; like that 'gulp.parallel(pug, scss, fonts, images, svg, scripts)'
-const build = gulp.series(clean, gulp.parallel(pug, scss, fonts, images, svg));
+const build = gulp.series(
+  clean,
+  gulp.parallel(pug, scss, fonts, images, svg, scripts)
+);
 
 function watchFiles() {
   gulp.watch(['./src/**/*.pug'], pug);
@@ -126,7 +127,7 @@ function watchFiles() {
   gulp.watch(['./src/fonts/**/*.{woff2,woff,ttf}'], fonts);
   gulp.watch(['./src/images/**/*.{jpg,png,gif,ico,webp,avif}'], images);
   gulp.watch(['./src/svg/**/*.svg'], svg);
-  // gulp.watch(['./src/scripts/**/*.js'], scripts);
+  gulp.watch(['./src/scripts/**/*.js'], scripts);
 }
 const watchapp = gulp.parallel(build, watchFiles, serve);
 
@@ -137,7 +138,7 @@ exports.scss = scss;
 exports.fonts = fonts;
 exports.images = images;
 exports.svg = svg;
-// exports.scripts = scripts;
+exports.scripts = scripts;
 exports.clean = clean;
 exports.build = build;
 exports.watchapp = watchapp;
