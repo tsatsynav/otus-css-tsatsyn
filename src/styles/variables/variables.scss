@@ -1,0 +1,40 @@
+:root {
+  /* SIZES */
+  --page-title-font-size: clamp(4.375rem, 4.0539rem + 1.4679vw, 5.375rem);
+  --section-title-font-size: clamp(1.125rem, 1.0046rem + 0.5505vw, 1.5rem);
+  --katya-title-font-size: clamp(4rem, 3.375rem + 2.2222vw, 5.375rem);
+  --page-font-size: 24px;
+  --hero-subtitle-font-size: clamp(1.125rem, 1.0682rem + 0.202vw, 1.25rem);
+  --page-blockquote-font-size-desktop: 26px;
+  --page-blockquote-font-size-mobile: 30px;
+  --designers-font-size: 16px;
+  --strong-points-subtitle-font-size: clamp(
+    2.875rem,
+    1.7386rem + 4.0404vw,
+    5.375rem
+  );
+  --strong-points-sublist-font-size: clamp(
+    1.5rem,
+    1.2159rem + 1.0101vw,
+    2.125rem
+  );
+  --footer-font-size: 16px;
+  --footer-product-font-size: 18px;
+  --footer-product-accent-font-size: 24px;
+
+  /* COLORS & IMAGES */
+  --link-active-color: #000;
+  --hero-background-color: #d9cdc4;
+  --hero-background-image: url('../images/hero-background.jpg');
+  --hero-background-image-mobile: url('../images/hero-background-mobile.jpg');
+  --hero-promo-background-color: #fff;
+  --page-blockquote-color: #0d0d0d;
+  --footer-background-color: #000;
+  --footer-color: #fff;
+  --navigarion-border-color: #000;
+
+  /* FONTS */
+  --page-main-font-family: roboto, sans-serif;
+  --page-title-font-family: 'Playfair Display', serif;
+  --page-accent-font-family: bitter, serif;
+}

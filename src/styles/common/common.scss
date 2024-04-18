@@ -1,0 +1,36 @@
+/* <<<------ 1.COMMON STYLES ------>>> */
+
+/* <<<------ 1.1.COMMON BLOCKS ------>>> */
+
+.wrapper-inner {
+  max-inline-size: 1165px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* <<<------ 1.2.COMMON TITLES ------>>> */
+
+.page-title {
+  font-family: var(--page-title-font-family);
+  font-size: var(--page-title-font-size);
+  line-height: 120%;
+}
+
+.section-title {
+  font-size: var(--section-title-font-size);
+  font-weight: 700;
+}
+
+.title-hidden {
+  display: none;
+}

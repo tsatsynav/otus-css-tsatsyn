@@ -1,0 +1,79 @@
+/* <<<------ 2.2.4.testimonials styles ------>>> */
+@import '../../mixins/display-flex-column';
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+  &__left-side {
+    display: flex;
+    position: relative;
+    justify-content: end;
+  }
+
+  &__list {
+    inline-size: 98px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__item {
+    position: absolute;
+    transform: rotate(-90deg);
+    right: -23%;
+  }
+
+  &__item-start {
+    bottom: 90px;
+  }
+
+  &__item-middle {
+    bottom: 352px;
+  }
+
+  &__item-end {
+    top: 113px;
+  }
+
+  &__item-text {
+    font-weight: 400;
+  }
+
+  &__img {
+    max-inline-size: 100%;
+    object-fit: contain;
+  }
+
+  &__right-side {
+    @include display-flex-column;
+    position: relative;
+    padding-inline-start: 21%;
+    gap: 38px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title-inside {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -10%;
+    top: 7.2%;
+  }
+
+  &__blockquote {
+    padding: 0 25%;
+    font-family: var(--page-accent-font-family);
+    font-size: var(--page-blockquote-font-size-desktop);
+    font-weight: 400;
+    text-align: center;
+    line-height: 130%;
+    letter-spacing: 1px;
+  }
+
+  &__image-right {
+    width: 221px;
+    height: 334px;
+  }
+}

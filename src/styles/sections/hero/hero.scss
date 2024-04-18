@@ -1,0 +1,32 @@
+/* <<<------ 2.2.1.hero styles ------>>> */
+@import '../../mixins/display-flex-column';
+
+.hero {
+  display: flex;
+  min-block-size: 630px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--hero-background-color);
+  background-image: var(--hero-background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__promo {
+    @include display-flex-column;
+    align-items: center;
+    justify-content: center;
+    padding: 7.5% 8.5%;
+    gap: 14px;
+    background-color: var(--hero-promo-background-color);
+  }
+
+  &__title {
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    font-size: var(--hero-subtitle-font-size);
+    font-weight: 500;
+  }
+}

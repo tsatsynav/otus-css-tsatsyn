@@ -1,0 +1,44 @@
+/* <<<------ 2.3.FOOTER ------>>> */
+@import '../mixins/display-flex-column';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 58px 20px;
+  align-items: center;
+  background-color: var(--footer-background-color);
+  color: var(--footer-color);
+  font-size: var(--footer-font-size);
+
+  .footer__address {
+    @include display-flex-column;
+    font-weight: 400;
+    line-height: 162.5%;
+  }
+
+  .footer__address-phone {
+    text-decoration-line: underline;
+  }
+
+  .footer__address-email {
+    text-decoration-line: underline;
+    text-transform: uppercase;
+  }
+
+  .footer__product {
+    padding-inline-start: 95px;
+    font-size: var(--footer-product-font-size);
+    font-weight: 500;
+  }
+
+  .footer__product-accent {
+    padding-inline-start: 2px;
+    font-size: var(--footer-product-accent-font-size);
+    font-weight: 900;
+  }
+
+  .footer__rights {
+    padding-inline-end: 5px;
+    font-weight: 400;
+  }
+}

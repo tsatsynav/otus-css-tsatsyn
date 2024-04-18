@@ -1,0 +1,10 @@
+@import '../mixins/display-flex-column';
+
+.page {
+  @include display-flex-column;
+  min-inline-size: 350px;
+  margin: 0;
+  font-family: var(--page-main-font-family);
+  font-style: normal;
+  font-size: var(--page-font-size);
+}

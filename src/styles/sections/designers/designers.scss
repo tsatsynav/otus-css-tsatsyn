@@ -1,0 +1,63 @@
+/* <<<------ 2.2.3.designers styles ------>>> */
+@import '../../mixins/display-flex-column';
+
+.designers {
+  @include display-flex-column;
+  padding-inline-start: 20px;
+  gap: 30px;
+
+  &__title {
+    padding-inline-start: 119px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    font-size: var(--designers-font-size);
+    overflow: scroll;
+  }
+
+  &__card {
+    @include display-flex-column;
+    gap: 24px;
+  }
+
+  &__card-img {
+    inline-size: 337px;
+    block-size: 440px;
+    object-fit: cover;
+  }
+
+  &__card-img-active {
+    inline-size: 570px;
+    block-size: 540px;
+    object-fit: cover;
+  }
+
+  &__card-description {
+    @include display-flex-column;
+  }
+
+  &__card-description-active {
+    padding-inline-start: 240px;
+  }
+
+  &__card-title {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__card-item {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__card-term {
+    font-weight: 700;
+  }
+
+  &__card-definition:not(:last-of-type)::after {
+    content: ' /';
+  }
+}

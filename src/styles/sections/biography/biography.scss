@@ -1,0 +1,68 @@
+/* <<<------ 2.2.2.biography styles ------>>> */
+@import '../../mixins/display-flex-column';
+
+.biography {
+  display: flex;
+  position: relative;
+  gap: 139px;
+
+  &__image {
+    max-inline-size: 49%;
+    object-fit: contain;
+  }
+
+  &__card {
+    @include display-flex-column;
+    justify-content: center;
+    gap: 36px;
+  }
+
+  &__title {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 48%;
+    top: 5%;
+  }
+
+  &__card-title {
+    font-size: var(--katya-title-font-size);
+    font-weight: 500;
+    line-height: 135%;
+  }
+
+  &__card-subtitle {
+    font-size: 18px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 18px;
+  }
+
+  &__item:not(:last-of-type)::after {
+    content: ' /';
+  }
+
+  &__blockquote {
+    position: relative;
+    padding-block-start: 26px;
+    padding-inline-end: 26px;
+    font-family: var(--page-accent-font-family);
+    font-size: var(--page-blockquote-font-size-desktop);
+    font-weight: 400;
+    color: var(--page-blockquote-color);
+    line-height: 120%;
+  }
+
+  &__blockquote::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 6px;
+    left: 2px;
+    top: -1px;
+    background-color: var(--page-blockquote-color);
+  }
+}
