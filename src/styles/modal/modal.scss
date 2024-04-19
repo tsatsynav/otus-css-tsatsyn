@@ -12,9 +12,25 @@
 
   &__container {
     inline-size: 480px;
+    position: relative;
+    top: -120px;
+    left: 16px;
     background-color: var(--page-background-color);
     padding: 20px;
     border-radius: 10px;
+  }
+
+  &__container::after {
+    content: '';
+    position: absolute;
+    inline-size: 480px;
+    block-size: 589px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 2px solid var(--page-background-color);
+    border-radius: 10px;
+    transform: rotate(2deg);
   }
 
   &-closed {
@@ -38,5 +54,10 @@
 
   &__input-textarea {
     resize: none;
+  }
+
+  &__send-btn::before {
+    content: '\2b';
+    font-family: FontAwesome;
   }
 }

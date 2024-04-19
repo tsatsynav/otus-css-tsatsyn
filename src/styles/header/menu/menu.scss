@@ -28,6 +28,12 @@
     transition: 0.3s ease;
   }
 
+  &__button-modal::before {
+    content: '\f086';
+    font-family: FontAwesome;
+    color: var(--page-background-color);
+  }
+
   &__button-modal {
     display: flex;
     justify-content: center;
