@@ -1,0 +1,23 @@
+@import '../mixins/display-flex-column';
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  font-family: var(--modal-font-family);
+  font-size: 18px;
+  background-color: rgb(129 129 126 / 60%);
+
+  &__container {
+    @include display-flex-column;
+    inline-size: 480px;
+    gap: 24px;
+    background-color: var(--page-background-color);
+  }
+
+  &-closed {
+    display: none;
+  }
+}

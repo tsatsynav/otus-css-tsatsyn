@@ -8,10 +8,49 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
+    align-items: center;
     gap: 3.9vw;
   }
 
   &__link-active {
     text-decoration: underline;
+    pointer-events: none;
+  }
+
+  &__link:focus-visible {
+    outline: 1px solid var(--page-color);
+    border-radius: 4px;
+  }
+
+  &__link:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  &__button-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 54px;
+    block-size: 54px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--page-color);
+  }
+
+  &__button-modal:focus-visible {
+    outline: 2px solid var(--page-color);
+    outline-offset: 2px;
+  }
+
+  &__button-modal:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  &__button-svg {
+    inline-size: 34px;
   }
 }
