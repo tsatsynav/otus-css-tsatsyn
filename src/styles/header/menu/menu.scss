@@ -22,10 +22,13 @@
     border-radius: 4px;
   }
 
+  &__link {
+    transition: opacity 0.3s ease;
+  }
+
   &__link:hover {
     opacity: 0.6;
     cursor: pointer;
-    transition: 0.3s ease;
   }
 
   &__button-modal {

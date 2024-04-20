@@ -44,6 +44,7 @@
   align-items: center;
   border: none;
   background-color: var(--page-color);
+  transition: opacity 0.3s ease;
 }
 
 .page-button:focus-visible {
@@ -54,5 +55,4 @@
 .page-button:hover {
   opacity: 0.6;
   cursor: pointer;
-  transition: 0.3s ease;
 }
