@@ -8,16 +8,17 @@
   inset: 0;
   font-family: var(--modal-font-family);
   font-size: 18px;
-  background-color: rgb(129 129 126 / 60%);
+  background-color: var(--modal-background-color);
 
   &__container {
     inline-size: 480px;
     position: relative;
-    top: -120px;
-    left: 16px;
+    top: -94px;
+    left: 19px;
     background-color: var(--page-background-color);
     padding: 20px;
     border-radius: 10px;
+    z-index: 1;
   }
 
   &__container::after {
@@ -31,6 +32,7 @@
     border: 2px solid var(--page-background-color);
     border-radius: 10px;
     transform: rotate(2deg);
+    z-index: 0;
   }
 
   &-closed {
@@ -39,25 +41,74 @@
 
   &__form {
     @include display-flex-column;
-    gap: 24px;
+    gap: 27px;
   }
 
-  &__fieldset {
-    @include display-flex-column;
-    gap: 24px;
-    border: none;
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
   }
 
-  &__fieldset label {
+  &__form label {
     @include display-flex-column;
+    gap: 6px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__input-name {
+    background-image: url('./svg/modal-name.svg');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+
+  &__input-mail {
+    background-image: url('./svg/modal-email.svg');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
   }
 
   &__input-textarea {
+    background-image: url('./svg/modal-text.svg');
+    background-repeat: no-repeat;
+    background-position: right 12px top 12px;
     resize: none;
   }
 
-  &__send-btn::before {
-    content: '\2b';
-    font-family: FontAwesome;
+  &__button-line {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
+
+  &__button {
+    inline-size: 179.54px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-block: 15px;
+  }
+
+  &__send-btn::before {
+    position: absolute;
+    left: 47px;
+    top: 6px;
+    content: '\2b';
+    font-family: var(--icon-font-family);
+    font-size: 29px;
+  }
+}
+
+[name] {
+  appearance: none;
+  border: 1px solid var(--modal-border-color);
+  border-radius: 8px;
+  font-family: var(--section-title-font-family);
+  font-size: 16px;
+  padding: 10px;
+}
+
+.button-text-accent {
+  padding-inline-start: 38px;
 }

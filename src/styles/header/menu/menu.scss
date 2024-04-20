@@ -30,7 +30,7 @@
 
   &__button-modal::before {
     content: '\f086';
-    font-family: FontAwesome;
+    font-family: var(--icon-font-family);
     color: var(--page-background-color);
   }
 
