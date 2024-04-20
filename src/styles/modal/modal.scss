@@ -13,7 +13,7 @@
   &__container {
     inline-size: 480px;
     position: relative;
-    top: -94px;
+    top: -63px;
     left: 19px;
     background-color: var(--page-background-color);
     padding: 20px;
@@ -41,7 +41,9 @@
 
   &__form {
     @include display-flex-column;
+    position: relative;
     gap: 27px;
+    z-index: 3;
   }
 
   &__title {
@@ -84,16 +86,24 @@
 
   &__button {
     inline-size: 179.54px;
-    display: flex;
+    block-size: 55.45px;
     position: relative;
-    justify-content: center;
-    padding-block: 15px;
+    border-radius: 8px;
+  }
+
+  &__close-btn {
+    background-color: var(--page-background-color);
+    border: 1px solid var(--page-color);
+  }
+
+  &__send-btn {
+    color: var(--page-background-color);
   }
 
   &__send-btn::before {
     position: absolute;
-    left: 47px;
-    top: 6px;
+    left: 49px;
+    top: 9px;
     content: '\2b';
     font-family: var(--icon-font-family);
     font-size: 29px;
@@ -107,6 +117,16 @@
   font-family: var(--section-title-font-family);
   font-size: 16px;
   padding: 10px;
+}
+
+[name]:focus-visible {
+  outline: 2px solid var(--page-color);
+}
+
+[name]:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .button-text-accent {
