@@ -1,9 +1,9 @@
 # otus-css-tsatsyn
-##Education OTUS project: MOD Studio 
-##Student: Andrey Tsatsyn
-##Telegram: https://t.me/TsatsynAV
-##E-mail: tsatsynav@yandex.ru
-##GitHub: https://github.com/tsatsynav
+## Education OTUS project: MOD Studio 
+## Student: Andrey Tsatsyn
+## Telegram: https://t.me/TsatsynAV
+## E-mail: tsatsynav@yandex.ru
+## GitHub: https://github.com/tsatsynav
 
 Instruction for run the project:
 
@@ -13,10 +13,10 @@ Instruction for run the project:
 4. in terminal enter: npm run build (push enter)
 5. in terminal enter: npm run dev (push enter)
 
-###Used stack:
-###HTML/PUG
-###CSS/SCSS
-###JavaScript
-###GULP
+### Used stack:
+### HTML/PUG
+### CSS/SCSS
+### JavaScript
+### GULP
 
 Deploy: https://otus-css-tsatsyn-mod-studio.netlify.app/
