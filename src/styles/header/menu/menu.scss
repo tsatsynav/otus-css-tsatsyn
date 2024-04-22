@@ -1,0 +1,17 @@
+/* <<<--- HEADER --->>> */
+
+.menu {
+  font-family: var(--menu-font-family);
+  font-weight: 500;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 3.9vw;
+  }
+
+  &__link-active {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,33 @@
+/* <<<------ 2.2.6.navigation styles ------>>> */
+
+.navigation {
+  position: sticky;
+  inline-size: 100%;
+  bottom: 0;
+  border-top: 1px solid var(--navigation-border-color);
+  border-bottom: 1px solid var(--navigation-border-color);
+  font-family: var(--page-accent-font-family);
+  font-size: 40px;
+  background-color: var(--page-background-color);
+  z-index: 99;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &__item {
+    inline-size: 92px;
+    block-size: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link-active {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+}

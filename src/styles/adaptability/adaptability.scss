@@ -1,0 +1,262 @@
+@import '../mixins/display-flex-column';
+
+@media (width < 768px) {
+  .header {
+    display: none;
+  }
+
+  .main {
+    gap: 0;
+    padding-block-end: 79px;
+  }
+
+  .hero {
+    min-block-size: 764px;
+    margin-block-end: 80px;
+    align-items: start;
+    background-image: var(--hero-background-image-mobile);
+  }
+
+  .hero__promo {
+    min-inline-size: 100%;
+    min-block-size: 344px;
+  }
+
+  .hero__title {
+    letter-spacing: -1px;
+  }
+
+  .biography {
+    flex-direction: column;
+    margin-block-end: 77px;
+    gap: 0;
+  }
+
+  .biography__image {
+    max-inline-size: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.12/1;
+    order: 1;
+  }
+
+  .biography__card {
+    flex-direction: column-reverse;
+    padding-left: 18px;
+    padding-right: 18px;
+    gap: 51px;
+  }
+
+  .biography__title {
+    transform: none;
+    left: 76%;
+    top: 0;
+  }
+
+  .biography__card-title {
+    position: relative;
+    padding-inline-start: 30px;
+  }
+
+  .biography__card-title::before {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    left: 1%;
+    top: 59%;
+    background-color: var(--page-blockquote-color);
+  }
+
+  .biography__list {
+    flex-direction: column;
+    margin-block-end: 56px;
+    gap: 0;
+    line-height: 118%;
+  }
+
+  .biography__item:not(:last-of-type)::after {
+    display: none;
+  }
+
+  .biography__item::before {
+    content: '- ';
+  }
+
+  .biography__blockquote {
+    padding-inline-end: 70px;
+    font-size: var(--page-blockquote-font-size-mobile);
+    font-weight: 300;
+  }
+
+  .designers {
+    padding-inline-start: 16px;
+    margin-block-end: 80px;
+  }
+
+  .designers__title {
+    padding-inline-start: 0;
+  }
+
+  .designers__list {
+    gap: 17px;
+  }
+
+  .designers__card-img {
+    inline-size: 310px;
+    block-size: 440px;
+  }
+
+  .designers__card-img-active {
+    inline-size: 310px;
+    block-size: 440px;
+  }
+
+  .designers__card-description-active {
+    padding-inline-start: 0;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-inline: 16px 16px;
+    margin-block-end: 77px;
+  }
+
+  .testimonials__left-side {
+    justify-content: start;
+  }
+
+  .testimonials__list {
+    inline-size: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+  }
+
+  .testimonials__item {
+    padding-inline-start: 7px;
+    position: static;
+    transform: none;
+    right: 0;
+  }
+
+  .testimonials__item-start {
+    bottom: 0;
+  }
+
+  .testimonials__item-middle {
+    bottom: 0;
+  }
+
+  .testimonials__item-end {
+    top: 0;
+  }
+
+  .testimonials__img {
+    display: none;
+  }
+
+  .testimonials__right-side {
+    padding-inline-start: 0;
+    padding-block-start: 48px;
+  }
+
+  .testimonials__title-inside {
+    transform: none;
+    left: 74%;
+    top: -0.3%;
+  }
+
+  .testimonials__blockquote {
+    padding: 0 37px;
+    font-size: var(--page-blockquote-font-size-mobile);
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0;
+    margin-block-end: 0;
+  }
+
+  .testimonials__image-right {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .strong-points {
+    padding-inline-start: 16px;
+    gap: 31px;
+    margin-block-end: 74px;
+  }
+
+  .strong-points__title {
+    padding-inline-start: 0;
+  }
+
+  .strong-points__list {
+    gap: 15px;
+  }
+
+  .strong-points__item-info {
+    padding: 0;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .strong-points__image {
+    block-size: 450px;
+  }
+
+  .strong-points__sublist {
+    @include display-flex-column;
+    gap: 7px;
+    padding-inline: 17px 0;
+  }
+
+  .strong-points__item:nth-of-type(1) {
+    order: 2;
+  }
+
+  .strong-points__item:nth-of-type(2) {
+    order: 3;
+  }
+
+  .strong-points__item:nth-of-type(3) {
+    order: 1;
+  }
+
+  .strong-points__item:nth-of-type(4) {
+    order: 4;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 41px 16px 46px;
+    gap: 3px;
+  }
+
+  .footer__address {
+    order: 1;
+    align-self: start;
+  }
+
+  .footer__product {
+    order: 0;
+    align-self: end;
+  }
+
+  .footer__rights {
+    order: 2;
+    align-self: start;
+  }
+}
+
+@media (width >= 768px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media (width < 992px) {
+  .biography__blockquote::before {
+    display: none;
+  }
+}

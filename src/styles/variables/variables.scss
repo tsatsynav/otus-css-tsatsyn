@@ -1,0 +1,50 @@
+:root {
+  /* <<<--- FONT FAMILY --->>> */
+  --page-font-family: 'Bitter', sans;
+  --section-title-font-family: 'Roboto', sans-serif;
+  --accent-font-family: 'Playfair Display', sans-serif;
+
+  /* <<<--- REUSE FONT FAMILY --->>> */
+  --menu-font-family: var(--section-title-font-family);
+  --section-hero-subtitle-font-family: var(--section-title-font-family);
+  --designers-list-font-family: var(--section-title-font-family);
+
+  /* FONT SIZES */
+  --page-font-size: 24px;
+  --page-title-font-size: clamp(4.375rem, 4.0539rem + 1.4679vw, 5.375rem);
+  --section-title-font-size: clamp(1.125rem, 1.0046rem + 0.5505vw, 1.5rem);
+  --hero-subtitle-font-size: clamp(1.125rem, 1.0682rem + 0.202vw, 1.25rem);
+  --biography-card-title-font-size: clamp(4rem, 3.375rem + 2.2222vw, 5.375rem);
+  --page-biography-blockquote-font-size-desktop: 26px;
+  --designers-list-font-size: 16px;
+  --page-testimonials-blockquote-font-size-desktop: 32px;
+  --strong-points-subtitle-font-size: clamp(
+    2.875rem,
+    1.7386rem + 4.0404vw,
+    5.375rem
+  );
+  --strong-points-sublist-font-size: clamp(
+    1.5rem,
+    1.2159rem + 1.0101vw,
+    2.125rem
+  );
+  --page-blockquote-font-size-mobile: 30px;
+  --footer-font-size: 16px;
+  --footer-product-font-size: 18px;
+  --footer-product-accent-font-size: 24px;
+
+  /* COLORS & BACKGROUNDS */
+  --page-background-color: #fff;
+  --page-color: #000;
+  --page-blockquote-color: #0d0d0d;
+  --hero-background-color: #d9cdc4;
+  --hero-background-image-desktop: url('../../images/hero-background-gorizont.jpg');
+  --hero-background-image-mobile: url('../../images/hero-background-vertical.jpg');
+
+  /* <<<--- REUSE COLORS --->>> */
+  --hero-promo-background-color: var(--page-background-color);
+  --link-active-color: var(--page-color);
+  --footer-background-color: var(--page-color);
+  --footer-color: var(--page-background-color);
+  --navigation-border-color: var(--page-color);
+}

@@ -1,0 +1,16 @@
+/* <<<--- MAIN --->>> */
+@import '../mixins/display-flex-column';
+
+.main {
+  @include display-flex-column;
+  flex-grow: 1;
+  gap: 150px;
+  padding-block-end: 145px;
+}
+
+@import '../sections/hero/hero';
+@import '../sections/biography/biography';
+@import '../sections/designers/designers';
+@import '../sections/testimonials/testimonials';
+@import '../sections/strong-points/strong-points';
+@import '../sections/navigation/navigation';
