@@ -18,3 +18,5 @@ HTML/PUG
 CSS/SCSS
 JavaScript
 GULP
+
+Deploy: https://otus-css-tsatsyn-mod-studio.netlify.app/
