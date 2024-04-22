@@ -94,6 +94,13 @@
   &__close-btn {
     background-color: var(--page-background-color);
     border: 1px solid var(--page-color);
+    transition: 0.3s ease;
+  }
+
+  &__close-btn:hover {
+    background-color: var(--page-color);
+    color: var(--page-background-color);
+    opacity: 0.6;
   }
 
   &__send-btn {
@@ -126,7 +133,6 @@
 [name]:hover {
   opacity: 0.6;
   cursor: pointer;
-  transition: 0.3s ease;
 }
 
 .button-text-accent {
