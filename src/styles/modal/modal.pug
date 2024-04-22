@@ -1,31 +1,31 @@
 .modal.modal-closed
   .modal__container
     form.modal__form(action='/', method='dialog')
-      fieldset.modal__fieldset
-        legend.modal__legend Get in touch
-        p.modal__text Do you have any questions? Have something to say? Don't be shy, write to us:
-        label.modal__label-name Name
-          input#modal__input-name.modal__input-name(
-            type='text',
-            placeholder='3+ Characters',
-            name='input-name',
-            minlength='3',
-            required
-          )
-        label.modal__label-mail E-mail
-          input#modal__input-mail.modal__input-mail(
-            type='email',
-            placeholder='name@email.com',
-            name='input-email',
-            required
-          )
-        label.modal__label-textarea Comment
-          textarea#modal__input-textarea.modal__input-textarea(
-            name='input-textarea',
-            cols='30',
-            rows='10',
-            required
-          )
+      h4.modal__title Get in touch
+      p.modal__text Do you have any questions? Have something to say? Don't be shy, write to us:
+      label.modal__label-name Name
+        input#modal__input-name.modal__input-name(
+          type='text',
+          placeholder='3+ Characters',
+          name='input-name',
+          minlength='3',
+          required
+        )
+      label.modal__label-mail E-mail
+        input#modal__input-mail.modal__input-mail(
+          type='email',
+          placeholder='name@email.com',
+          name='input-email',
+          required
+        )
+      label.modal__label-textarea Comment
+        textarea#modal__input-textarea.modal__input-textarea(
+          name='input-textarea',
+          cols='30',
+          rows='6',
+          required
+        )
       .modal__button-line
-        button.modal__close-btn(type='reset') Cancel
-        button.modal__send-btn(type='submit') Send
+        button.page-button.modal__button.modal__close-btn(type='reset') Cancel
+        button.page-button.modal__button.modal__send-btn(type='submit') 
+          span.button-text-accent Send

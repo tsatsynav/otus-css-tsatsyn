@@ -28,32 +28,16 @@
     transition: 0.3s ease;
   }
 
-  &__button-modal::before {
-    content: '\f086';
-    font-family: FontAwesome;
-    color: var(--page-background-color);
-  }
-
   &__button-modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     inline-size: 54px;
     block-size: 54px;
-    border: none;
     border-radius: 4px;
-    background-color: var(--page-color);
   }
 
-  &__button-modal:focus-visible {
-    outline: 2px solid var(--page-color);
-    outline-offset: 2px;
-  }
-
-  &__button-modal:hover {
-    opacity: 0.6;
-    cursor: pointer;
-    transition: 0.3s ease;
+  &__button-modal::before {
+    content: '\f086';
+    font-family: var(--icon-font-family);
+    color: var(--page-background-color);
   }
 
   &__button-svg {

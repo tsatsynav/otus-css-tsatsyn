@@ -3,6 +3,7 @@
   --page-font-family: 'Bitter', sans;
   --section-title-font-family: 'Roboto', sans-serif;
   --accent-font-family: 'Playfair Display', sans-serif;
+  --icon-font-family: 'FontAwesome';
 
   /* <<<--- REUSE FONT FAMILY --->>> */
   --menu-font-family: var(--section-title-font-family);
@@ -41,6 +42,8 @@
   --hero-background-color: #d9cdc4;
   --hero-background-image-desktop: url('../../images/hero-background-gorizont.jpg');
   --hero-background-image-mobile: url('../../images/hero-background-vertical.jpg');
+  --modal-background-color: rgb(129 129 126 / 60%);
+  --modal-border-color: rgb(0 0 0 / 30%);
 
   /* <<<--- REUSE COLORS --->>> */
   --hero-promo-background-color: var(--page-background-color);

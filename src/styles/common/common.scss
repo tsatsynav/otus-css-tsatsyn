@@ -35,3 +35,24 @@
 .title-hidden {
   display: none;
 }
+
+/* <<<--- COMMON BUTTON --->>> */
+
+.page-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: var(--page-color);
+}
+
+.page-button:focus-visible {
+  outline: 2px solid var(--page-color);
+  outline-offset: 2px;
+}
+
+.page-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
