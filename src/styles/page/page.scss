@@ -9,4 +9,9 @@
   font-family: var(--page-font-family);
   font-style: normal;
   font-size: var(--page-font-size);
+  scrollbar-gutter: stable;
+
+  &__scroll-locked {
+    overflow: hidden;
+  }
 }

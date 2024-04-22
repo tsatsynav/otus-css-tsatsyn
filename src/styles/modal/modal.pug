@@ -1,0 +1,30 @@
+.modal.modal-closed
+  .modal__container
+    h4.modal__title Get in touch
+    p.modal__text Do you have any questions? Have something to say? Don't be shy, write to us:
+    form.modal__form(action='#', method='#')
+      label.modal__label-name(for='modal__input-name') Name
+      input#modal__input-name.modal__input-name(
+        type='text',
+        placeholder='3+ Characters'
+      )
+      label.modal__label-mail(for='modal__input-mail') E-mail
+      input#modal__input-mail.modal__input-mail(
+        type='email',
+        placeholder='name@email.com'
+      )
+      label.modal__label-textarea(for='modal__input-textarea') Comment
+      textarea#modal__input-textarea.modal__input-textarea(
+        name='modal__input-textarea',
+        cols='30',
+        rows='10'
+      ) Some text...
+    </form>
+    .modal__button-line
+      button.modal__close-btn Cancel
+      button.modal__send-btn
+        span.modal__send-plus
+          <svg width="19" height="20" viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.8618 11.1501H10.9411V19.0708H8.30086V11.1501H0.380127V8.50984H8.30086V0.589111H10.9411V8.50984H18.8618V11.1501Z" fill="white"/>
+          </svg>
+        span.modal__send-text Send
