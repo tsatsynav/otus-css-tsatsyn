@@ -24,8 +24,9 @@
   }
 
   &__card-title {
-    padding-inline-end: 50px;
-    margin-block-end: 36px;
+    padding-inline-end: 50%;
+    // margin-block-start: 8%;
+    margin-block-end: 7%;
     font-size: var(--biography-card-title-font-size);
     font-weight: 500;
     line-height: 135%;
@@ -44,7 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2px;
-    margin-block-end: 57px;
+    margin-block-end: 13%;
     font-size: 18px;
   }
 
@@ -54,7 +55,7 @@
 
   &__blockquote {
     position: relative;
-    padding-inline-end: 85px;
+    padding-inline-end: 19%;
     font-size: var(--page-biography-blockquote-font-size-desktop);
     font-weight: 400;
     color: var(--page-blockquote-color);

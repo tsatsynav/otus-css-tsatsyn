@@ -52,7 +52,7 @@
     position: relative;
     padding-inline-start: 21%;
     align-items: center;
-    gap: 22px;
+    gap: 44px;
   }
 
   &__title-inside {
@@ -63,8 +63,7 @@
   }
 
   &__blockquote {
-    padding: 42px 122px 0;
-    margin-block-end: 22px;
+    padding: 9.5% 26% 0;
     font-family: var(--page-font-family);
     font-size: var(--page-testimonials-blockquote-font-size-desktop);
     font-weight: 400;
